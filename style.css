@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(Image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-nav {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #f6c004;
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    border: none;
+}
+
+.logo {
+    color: #f4bf04;
+    font-size: 30px;
+}
+
+.header-content {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header-content h1 {
+    color: #e5e7eb;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header-description p {
+    color: #dbdde1;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.header-content button {
+    margin-top: 20px;
+}
+
+.info-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 80px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #141414;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-bottom: 15px; */
+}
+
+.card-desc {
+    margin-top: 20px;
+    line-height: 10px;
+    font-size: 7px;
+    font-weight: 800;
+    color: #bdbdbd;
+}
+
+.logo-earth {
+    background-color: #191818;
+    padding: 15px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: #662d54;
+    justify-content: center;
+}
+
+.logo-b {
+    background-color: #191818;
+    padding: 15px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: #0c2f2e;
+    justify-content: center;
+}
+
+.logo-c {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    background-color: #232323;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #662d54;
+    font-size: 2.5em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.logo-d {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    color: #5e4817;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.content-2 {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #f6b800;
+    color: #000;
+}
+
+.section-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 400px;
+}
+
+.text-content h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.btn-discover {
+    background-color: #000;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: #333;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 60px;
+}
+
+/* =============================
+    RESPONSIVE TABLET (max 992px)
+   ============================= */
+@media (max-width: 992px) {
+    .header {
+        padding: 20px 15px 150px;
+        overflow: hidden;
+    }
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-nav {
+        padding: 20px 30px;
+    }
+
+    .section-container {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Override flex → jadi grid */
+    body .info-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-section .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* =============================
+    RESPONSIVE MOBILE (max 768px)
+   ============================= */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        text-align: center;
+        background-position: top;
+        padding: 20px 15px 120px;
+        overflow: hidden;
+        max-height: 550px;
+    }
+
+    .header-nav {
+        padding: 20px;
+    }
+
+    .header-content {
+        margin-top: 60px;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .header-description p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 8px 20px;
+    }
+
+    body .info-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .info-section .card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 25px 20px;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .card-desc {
+        margin-top: 10px;
+        line-height: 1.3;
+        font-size: 12px;
+    }
+
+    /* Section 2 */
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-content {
+        max-width: 100%;
+    }
+
+    .image-content img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-discover {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* =============================
+    SMALL MOBILE (max 480px)
+   ============================= */
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 26px;
+    }
+
+    .header-description p {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .text-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ====================
+    PER ANIMASIAN
+   ==================== */
+
+button,
+.btn-discover {
+    position: relative;
+    padding: 12px 34px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    background: #f5c105; /* warna Netflix */
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+
+    /* ANIMASI BARU */
+    transform: translateY(0);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+}
+
+/* Hover animasi scaling + shadow */
+button:hover,
+.btn-discover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 18px rgb(255, 238, 0);
+    background: #ffc60a;
+}
+
+button:focus,
+.btn-discover:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 196, 0, 0.6);
+}
+
+button::after,
+.btn-discover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 120%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ffffff, transparent);
+    opacity: 0.7;
+
+    /* gerakan laser */
+    animation: laser 2.2s infinite linear;
+}
+
+@keyframes laser {
+    0% {
+        left: -120%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+button:active,
+.btn-discover:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgb(240, 200, 24);
+}
+
+/* Pulse background saat click */
+button:active::before,
+.btn-discover:active::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    animation: pulse 0.35s ease-out;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* ===============================================
+    ANIMATION CLASS INFO-SECTION CARD HOVER SHADOW 
+   ================================================ */
+
+.info-section .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+/* Hover efek 3D + shadow glow */
+.info-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 193, 7, 0.35); /* Glow warna emas */
+    background-color: #1a1a1a;
+}
+
+/* Glow border animasi */
+.info-section .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(45deg, rgba(255, 193, 7, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 193, 7, 0.1));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+/* Saat hover glow aktif */
+.info-section .card:hover::after {
+    opacity: 1;
+}
+
+/* =========================================
+    ANIMATION CONTENT-2 SECTION 
+   ========================================= */
+
+/* Wrapper animation base */
+.section-container {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.9s ease-out forwards;
+}
+
+/* Delay animasi antara text dan image */
+.text-content {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: fadeSlideLeft 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.image-content {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fadeSlideRight 1s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+/* Hover animasi untuk image */
+.image-content img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-content img:hover {
+    transform: scale(1.05) translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
